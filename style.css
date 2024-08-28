@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #210335; /* Dark background color */
+}
+
+form {
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    padding: 20px;
+    background: rgba(3, 0, 26, 0.938);
+    color: white;
+    border-radius: 8px;
+    border: 2px solid transparent; /* Transparent border for default state */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease; /* Smooth transition for border color change */
+}
+
+form:hover {
+    border-color: azure; /* Border color on hover */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    margin-right: 10px;
+}
+
+.submit-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input[type="number"], 
+input[type="submit"] {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc; /* Light border for input fields */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for hover effects */
+}
+
+input[type="number"]:hover,
+input[type="submit"]:hover {
+    background-color: #f0f0f0; /* Slightly lighter background on hover */
+    border-color: #007bff; /* Border color on hover */
+    color: black;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none; /* Remove default border for submit buttons */
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.output {
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3); /* Slightly transparent black background for contrast */
+    border-radius: 8px;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+.result {
+    margin: 10px 0;
+    color: #e0e0e0; /* Light gray color for the result text */
+}
+
+.result strong {
+    color: #ffeb3b; /* Yellow color for emphasis on result values */
+}
