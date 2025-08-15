@@ -30,6 +30,14 @@ Includes a clear button to reset all operations instantly. Perfect for beginners
 
 ---
 
+## 🖼️ Screenshots
+
+<p align="center">
+  <img src="calculator.png" alt="Calculator Screenshot" width="500"/>
+</p>
+
+---
+
 ## 📦 Installation
 
 No special environment required — just a web browser!  
